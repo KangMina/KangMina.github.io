@@ -87,6 +87,8 @@
         #customer{
         	float: right;
         	margin: 30px 0 20px 180px;
+        	 font-weight: bold;
+            color: #EDA900;
         }
         body{
         	background-color: #BCE55C;
@@ -170,6 +172,30 @@
 		border-collapse: collapse;
 		background-color: #FFE400;
 	}
+.green{
+	background-color: #60B85F;
+	
+}
+.dropdown{
+			/*display: inline-block;*/
+			display: block;
+		}
+		.dropdown-content{
+			display: none;
+			/*position: absolute;*/
+			background-color: #FAF4C0;
+			width: 100px;
+			padding: 12px 16px;
+		}
+		.dropdown:hover .dropdown-content{
+			display: block;
+		}
+		.gulsi
+		{
+			color: #FFBB00;
+			font-family: 맑은 고딕;
+			font-weight: bold;
+		}
 	</style>
 		<body>
 	<header>
@@ -185,16 +211,61 @@
 
 <nav>
 <ul id="nc">
-	<li><img src="./img/ds.png" width="95px"></li>
-		
-	<li><img src="./img/gl.png" width="95px"></li>
+	<li><div class="dropdown">
+<img src="./img/ds.png" width="95px"><div class="dropdown-content">
+			<p class="gulsi">마키</p>
+			<p class="gulsi">치이</p>	</div>
+			</div></li>
 
-     <li><img src="./img/sf.png" width="95px"></li>
+		
+	<li><div class="dropdown">
+	<img src="./img/gl.png" width="95px">
+    <div class="dropdown-content">
+			
+			 <p class="gulsi">BEST</p>
+	 <p class="gulsi">모아보기</p>
+	 <p class="gulsi">다운로드</p>
+				</div>
+			</div>
+	</li>
+
+     <li><div class="dropdown">
+     <img src="./img/sf.png" width="95px">
+     <div class="dropdown-content">
+     <p class="gulsi">과거회상</p>
+	 <p class="gulsi">오늘일기</p>
+	 </div></div>
+     </li>
    
-     <li><img src="./img/tv.png" width="95px"></li>
+     <li><div class="dropdown">
+     <img src="./img/tv.png" width="95px">
+     <div class="dropdown-content">
+     <p class="gulsi">NEW</p>
+	 <p class="gulsi">동물일상</p>
+	 <p class="gulsi">특별한 날</p>	</div></div>
+     </li>
      
-     <li><img src="./img/ev.png" width="95px"></li>
-  </ul>
+     <li><div class="dropdown">
+     <img src="./img/ev.png" width="95px">
+     <div class="dropdown-content">
+     <p class="gulsi">배포</p>
+	 <p class="gulsi">공모전</p>
+	 </div></div>
+     </li>
+     </ul>
+     </nav>
+<div class="clear"></div>
+<section class="clear">
+	<img src="./img/makichimain.jpg" width="810px">
+</section>
+<aside>
+	<ul>
+		<li class="movie"><p><img src="./img/mclogo.png" width="180px"></li>
+		<li class="movie"><img src="./img/maki.jpg" width="180px"><p></li>
+		<li class="movie"><img src="./img/chi.jpg" width="180px"></li>
+		
+		
+	</ul>
 </nav>
 </div>
 </div>
@@ -207,13 +278,13 @@
 
 		<form>
 
-		<tr><td>이름</td><td><P><input type="text"></td></tr>
+		<tr><div class="green"><th>이름</th></div><td><P><input type="text"></td></tr>
 
-	    <tr><td>비밀번호</td><td><P><input type="password"></td></tr>
+	    <tr><div class="green"><th>비밀번호</th><<td><P><input type="password"></td></tr>
 
-	    <tr><td>성별</td><td><P><input type="radio" name="gender" checked="A" id="a"><label for=a> 여성<input type="radio" name="gender" id="b"> <label for=b>남성</td></tr>
+	    <tr><th>성별</th><td><P><input type="radio" name="gender" checked="A" id="a"><label for=a> 여성<input type="radio" name="gender" id="b"> <label for=b>남성</td></tr>
 
-	    <tr><td>보유장난감</td><td><P><label><input type="checkbox" >쥐돌이머신</label>
+	    <tr><th>보유장난감</th><td><P><label><input type="checkbox" >쥐돌이머신</label>
 
 	                                <label><input type="checkbox" >땅랑이 볼</label>
 
@@ -221,7 +292,7 @@
 
 	                                </td></tr>
 
-	    <tr><td>주인수입유형</td><td><P><select><option>------선택------</option>
+	    <tr><th>주인수입유형</th><td><P><select><option>------선택------</option>
                                      <option>월300만원</option>
 	                                 <option>월500만원</option>
 
@@ -231,13 +302,13 @@
 
 	                                 </select></td></tr>
 
-	    <tr><td>반려동물 이미지</td><td><P><input type="file"></td></tr>
+	    <tr><th>반려동물 이미지</th><td><P><input type="file"></td></tr>
 
-	    <tr><td>이메일</td><td><P><input type="email" placeholder="정확한 이메일을 넣으세요"><input type="submit" value="확인"></td></tr>
+	    <tr><th>이메일</th><td><P><input type="email" placeholder="정확한 이메일을 넣으세요"><input type="submit" value="확인"></td></tr>
 
-	    <tr><td>개인 반려동물페이지</td><td><P><input type="url" placeholder="정확한 URL주소를 넣으세요"><input type="submit" value="확인"></td></tr>
+	    <tr><th>개인 반려동물페이지</th><td><P><input type="url" placeholder="정확한 URL주소를 넣으세요"><input type="submit" value="확인"></td></tr>
 
-	    <tr><td>가입 포부</td><td><P><textarea rows=10 cols=50 placeholder="자신을 자유롭게 소개해주세요"></textarea></td></tr>
+	    <tr><th>가입 포부</th><td><P><textarea rows=10 cols=50 placeholder="자신을 자유롭게 소개해주세요"></textarea></td></tr>
 
 	    	<tr><th colspan="2"><input type="submit" value="제출"></th></tr>
 
@@ -256,4 +327,4 @@
 	</div></footer>
 
 </body>
-</head>
+</html>
