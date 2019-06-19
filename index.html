@@ -26,8 +26,7 @@
 			float: right;
 			margin: 30px 20px 0 0;
 		}
-
-	nav{
+		nav{
 			height:70px;
 			margin-top:10px;
 			background-color: #FFE400;
@@ -43,10 +42,9 @@
 		}
 		section{
             float: left;
-			width: 1100px;
-			height: 500px;
+			width: 810px;
+			height: 370px;
 			margin-top: 10px;
-			background-color: #E4F7BA;
 			
 		}
 		
@@ -56,7 +54,6 @@
 			width: 280px;
 			height: 360px;
 			margin-top: 10px;
-			margin-bottom: 10px;
 
 			background-color: #E4F7BA;
 			
@@ -77,7 +74,7 @@
         	
         	height: 180px;
         	
-        	margin-top: 10px;
+        	
         	background-color: #FFE400;
         }
         #adress{
@@ -86,8 +83,8 @@
         }
         #customer{
         	float: right;
-        	margin: 30px 0 20px 180px;
-        	 font-weight: bold;
+        	margin: 30px 20px 20px 180px;
+            font-weight: bold;
             color: #EDA900;
         }
         body{
@@ -112,79 +109,53 @@
 	}
 	.gan{
 		/*padding-top: 25px;*/
-		margin-top: 10px;
-		margin-left: 500px;
+		margin-left: 145px;
 	}
    #gwnd{
    	text-align: center;
    }
-   #contents{
-	width:1140px;
-	height:300px;
-	margin: 0 auto;
-}
-#sub_menu{
-	width: 234px;
-	float: left;
-	margin-top: 25px;
-	/*border: solid 1px red;*/
-}
-#sub_menu h3 {
-	font-size: 18px;
-	color: #5df0c0;
-	padding: 12px;
-	background-color: #516e7f;
-}
-#sub_menu li {
-	padding: 10px;
-	border-bottom: dotted 1px #cccccc;
-}
-#main_contents{
-	width:880px;
-	float: right;
-	margin-top: 25px
-	/*border: solid 1px red;*/
-}
-#main_contents h3{
-	font-size: 22px;
-	padding-bottom: 8px;
-	border-bottom: solid 1px #cccccc;
-}
-#main_contents p {
-	margin-top: 30px;
-	line-height: 180%;
-}
-#main_contents #figure{
-	margin-top: 30px;
-	text-align: center;
-}
-#main_contents li{
-	padding: 5px;
-
-}
-#page1
-	{
+   .dropdown{
+			/*display: inline-block;*/
+			display: block;
+		}
+		.dropdown-content{
+			display: none;
+			/*position: absolute;*/
+			background-color: #FAF4C0;
+			width: 100px;
+			padding: 12px 16px;
+		}
+		.dropdown:hover .dropdown-content{
+			display: block;
+		}
+		.gulsi
+		{
+			color: #FFBB00;
+			font-family: 맑은 고딕;
+			font-weight: bold;
+		}
 		
-		margin: auto;
-	
-	}
-
 	</style>
-		<body>
-	<header>
+
+</head>
+<body>
+<header>
 	<div id="logo">
-		<a href="index.html"><img src="./img/logomc.png"></a>
+		<img src="./img/logomc.png">
 </div>
 <div id="top">
-	<a href="index1.html"><img src="./img/ro.png" width="100px"></a><img src="./img/i.png" width="12px"><img src="./img/hehe.png" width="100px"><img src="./img/i.png" width="12px"> <a href="index2.html"><img src="./img/mai.png" width="100px"></a>
+	<a href="index1.html"><img src="./img/ro.png" width="100px"></a>
+	<img src="./img/i.png" width="12px">
+	<a href="hehe.html"><img src="./img/hehe.png" width="100px"></a>
+	<img src="./img/i.png" width="12px">
+	<a href="index2.html"> <img src="./img/mai.png" width="100px"></a>
 
 </header>
-<div class="clear"></div>
 <div id ='page'>
-
+<div class="clear"></div>
 <nav>
-	<ul id="nc">	
-<li><div class="dropdown">
+<ul id="nc">	
+	<li><div class="dropdown">
 <img src="./img/ds.png" width="95px"><div class="dropdown-content">
 			<p class="gulsi">마키</p>
 			<p class="gulsi">치이</p>	</div>
@@ -227,12 +198,27 @@
      </li>
      </ul>
      </nav>
-</div>
-</div>
-<div id ='page'>
-	
+<div class="clear"></div>
 <section class="clear">
-<img src="./img/mypage.png" width="550px"><img src="./img/mypage1.png" width="550px">
+	<img src="./img/makichimain.jpg" width="810px">
+</section>
+<aside>
+	<ul>
+		<li class="movie"><p><img src="./img/mclogo.png" width="180px"></li>
+		<li class="movie"><img src="./img/maki.jpg" width="180px"><p></li>
+		<li class="movie"><img src="./img/chi.jpg" width="180px"></li>
+		
+		
+	</ul>
+</aside></div>
+<div id="s2">
+	<div class="gan">
+<section class="clear">
+	<div id="gwnd"><img src="./img/link1.png" width="100px">&nbsp;&nbsp;<P></div>
+    <img src="./img/tweet.jpg" width="180px">&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="./img/ins.jpg" width="180px">&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="./img/tube.jpg" width="180px">&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="./img/naver.jpg" width="180px"></div>
 </section></div>
 <footer class="clear">
 	<div id="adress">
@@ -240,7 +226,10 @@
 		
 	</div>
 	<div id="customer">
-	
+		회사 연락처: 070-0000-0000<p>
+			개인 상담처: 010-0000-0000
+
+
 	</div></footer>
 
 </body>
